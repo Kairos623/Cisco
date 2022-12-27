@@ -1,0 +1,27 @@
+int fa0/1
+switchport mode access
+switchport access vlan 4
+комут 2 уровня
+
+3 уровень
+int fa0/1
+switchport trunk encapsulation dot1q
+switchport mode trunk
+switchport trunk allowed vlan 4
+
+int vlan 4
+ip address 4.4.4.1 255.255.255.0
+ip routing
+
+vlan 4
+name VLAN4
+
+
+
+
+к роутеру vlan 5
+int gi0/1
+switchport mode access
+switch port access vlan 5
+
+
